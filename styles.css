@@ -121,7 +121,7 @@ textarea {
 button {
     margin-top: 20px;
     padding: 12px 20px;
-    background-color: #6a5f4f; /* Muted dark brown for button */
+    background-color: red; /* Muted dark brown for button */
     color: whitesmoke; /* Soft beige for button text */
     border: none;
     border-radius: 6px;
@@ -169,7 +169,7 @@ legend {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    background-color: #6a5f4f;
+    background-color: red;
     color: whitesmoke;
     padding: 12px 20px;
     border-radius: 50px;
