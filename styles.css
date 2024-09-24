@@ -1,0 +1,295 @@
+/* General Styles */
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #1e1e1e;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    width: 50px;
+    height: 50px;
+    border-radius: 15px;
+}
+
+/* Fixed Header */
+.fixed-header {
+    background-color: #1e1e1e;
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.fixed-header h1, .fixed-header h2 {
+    margin: 0;
+}
+
+.fixed-header h1 {
+    font-size: 24px;
+    color: #ffffff;
+    margin-left: 10px;
+}
+
+.fixed-header h2 {
+    font-size: 20px;
+    /* color: #ff5500; */
+}
+
+.logo-section {
+    display: flex;
+    align-items: center;
+}
+
+.company-logo {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+/* Container */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 120px auto; /* Adjusted margin to account for fixed header */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Section Headers */
+h3 {
+    font-size: 22px;
+    /* color: #ff5500; */
+    margin-bottom: 15px;
+}
+
+/* Form Styles */
+form {
+    background-color: #2b2b2b;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+label {
+    display: block;
+    margin-top: 15px;
+    font-size: 16px;
+    color: #bbbbbb;
+}
+
+input[type="text"], input[type="email"], input[type="file"], textarea {
+    width: 98%;
+    padding: 12px;
+    margin-top: 8px;
+    border-radius: 6px;
+    border: 1px solid #ffffff; /* White border */
+    background-color: #3b3b3b;
+    color: #ffffff;
+    transition: background-color 0.3s ease, border 0.3s ease;
+}
+
+input[type="text"]:hover, input[type="email"]:hover, input[type="file"]:hover, textarea:hover {
+    border: 1px solid #ff5500;
+    background-color: #4a4a4a;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+button {
+    margin-top: 20px;
+    padding: 12px 20px;
+    background-color: gray;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #e14d00;
+    transform: scale(1.05);
+}
+
+/* Progress Bar */
+.progress-container {
+    width: 100%;
+    background-color: #ddd;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.progress-bar {
+    height: 10px;
+    width: 0;
+    background-color: #ff5500;
+    border-radius: 10px;
+    transition: width 0.4s ease;
+}
+
+/* Fieldsets */
+fieldset {
+    border: none;
+    margin-top: 20px;
+    padding: 0;
+}
+
+legend {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+/* Inputs */
+input[type="checkbox"], input[type="radio"] {
+    margin-right: 10px;
+}
+
+input:checked + label {
+    background-color: #ff5500;
+    color: white;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+input[type="checkbox"]:hover, input[type="radio"]:hover {
+    cursor: pointer;
+}
+
+/* CTA Button */
+.cta-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: gray;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 50px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+    z-index: 100;
+}
+
+.cta-button:hover {
+    background-color: #ff4500;
+    transform: scale(1.05);
+}
+
+.cta-button i {
+    margin-right: 8px;
+}
+
+/* Responsive Layout */
+@media (max-width: 1024px) {
+    .container {
+        width: 95%;
+    }
+
+    .fixed-header h1 {
+        font-size: 22px;
+    }
+
+    .fixed-header h2 {
+        font-size: 18px;
+    }
+
+    .company-logo {
+        width: 50px;
+        height: 50px;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+
+    label {
+        font-size: 14px;
+    }
+
+    button {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+        flex-direction: column;
+    }
+
+    .fixed-header h1 {
+        font-size: 18px;
+    }
+
+    .fixed-header h2 {
+        font-size: 16px;
+    }
+
+    .company-logo {
+        width: 40px;
+        height: 40px;
+    }
+
+    h3 {
+        font-size: 18px;
+    }
+
+    label {
+        font-size: 14px;
+    }
+
+    input, textarea {
+        padding: 10px;
+    }
+
+    button {
+        font-size: 14px;
+        padding: 10px 15px;
+    }
+
+    .cta-button {
+        bottom: 10px;
+        right: 10px;
+        padding: 10px 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .fixed-header h1 {
+        font-size: 16px;
+    }
+
+    .fixed-header h2 {
+        font-size: 14px;
+    }
+
+    .company-logo {
+        width: 35px;
+        height: 35px;
+    }
+
+    h3 {
+        font-size: 16px;
+    }
+
+    button {
+        font-size: 12px;
+    }
+
+    .cta-button {
+        padding: 8px 12px;
+    }
+}
