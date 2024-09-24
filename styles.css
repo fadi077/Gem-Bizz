@@ -1,6 +1,8 @@
-/* General Styles */
+ /* General Styles */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap'); /* Importing Roboto font */
+
 body {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Roboto', sans-serif;
     background-color: #1e1e1e;
     color: #ffffff;
     margin: 0;
@@ -8,8 +10,8 @@ body {
 }
 
 img {
-    width: 50px;
-    height: 50px;
+    width: 60px;
+    height: 60px;
     border-radius: 15px;
 }
 
@@ -29,17 +31,18 @@ img {
 
 .fixed-header h1, .fixed-header h2 {
     margin: 0;
+    font-weight: 700; /* Bold headings for clear visibility */
 }
 
 .fixed-header h1 {
-    font-size: 24px;
+    font-size: 36px; /* Larger font size for main header */
     color: #ffffff;
     margin-left: 10px;
 }
 
 .fixed-header h2 {
-    font-size: 20px;
-    /* color: #ff5500; */
+    font-size: 28px; /* Slightly smaller font for subheading */
+    color: #ffffff;
 }
 
 .logo-section {
@@ -48,17 +51,18 @@ img {
 }
 
 .company-logo {
-    height: 60px;
-    width: 60px;
+    width: 90px;
+    height: 90px;
     border-radius: 50%;
     margin-right: 10px;
+    transition: width 0.3s ease, height 0.3s ease;
 }
 
 /* Container */
 .container {
     width: 90%;
     max-width: 1200px;
-    margin: 120px auto; /* Adjusted margin to account for fixed header */
+    margin: 120px auto;
     padding: 20px;
     display: flex;
     flex-direction: column;
@@ -67,9 +71,17 @@ img {
 
 /* Section Headers */
 h3 {
-    font-size: 22px;
-    /* color: #ff5500; */
+    font-size: 32px; /* Larger section headers */
+    font-weight: 700; /* Bold font for section headers */
+    color: #ff6600; /* Highlight section headers with a color */
     margin-bottom: 15px;
+}
+
+h4 {
+    font-size: 26px; /* Slightly smaller sub-headers */
+    font-weight: 500; /* Medium weight for sub-headers */
+    color: #ffffff; /* Ensure contrast for readability */
+    margin-bottom: 10px;
 }
 
 /* Form Styles */
@@ -83,7 +95,7 @@ form {
 label {
     display: block;
     margin-top: 15px;
-    font-size: 16px;
+    font-size: 18px;
     color: #bbbbbb;
 }
 
@@ -92,7 +104,7 @@ input[type="text"], input[type="email"], input[type="file"], textarea {
     padding: 12px;
     margin-top: 8px;
     border-radius: 6px;
-    border: 1px solid #ffffff; /* White border */
+    border: 1px solid #ffffff;
     background-color: #3b3b3b;
     color: #ffffff;
     transition: background-color 0.3s ease, border 0.3s ease;
@@ -148,25 +160,10 @@ fieldset {
 }
 
 legend {
-    font-size: 18px;
+    font-size: 24px; /* Larger font for legend */
+    font-weight: 700;
+    color: #ff6600; /* Use color to distinguish section titles */
     margin-bottom: 10px;
-    color: #ffffff;
-}
-
-/* Inputs */
-input[type="checkbox"], input[type="radio"] {
-    margin-right: 10px;
-}
-
-input:checked + label {
-    background-color: #ff5500;
-    color: white;
-    border-radius: 5px;
-    transition: all 0.3s ease;
-}
-
-input[type="checkbox"]:hover, input[type="radio"]:hover {
-    cursor: pointer;
 }
 
 /* CTA Button */
@@ -199,28 +196,32 @@ input[type="checkbox"]:hover, input[type="radio"]:hover {
     }
 
     .fixed-header h1 {
-        font-size: 22px;
+        font-size: 30px;
     }
 
     .fixed-header h2 {
-        font-size: 18px;
+        font-size: 24px;
     }
 
     .company-logo {
-        width: 50px;
-        height: 50px;
+        width: 70px;
+        height: 70px;
     }
 
     h3 {
-        font-size: 20px;
+        font-size: 28px;
+    }
+
+    h4 {
+        font-size: 24px;
     }
 
     label {
-        font-size: 14px;
+        font-size: 16px;
     }
 
     button {
-        font-size: 14px;
+        font-size: 16px;
     }
 }
 
@@ -231,24 +232,28 @@ input[type="checkbox"]:hover, input[type="radio"]:hover {
     }
 
     .fixed-header h1 {
-        font-size: 18px;
+        font-size: 26px;
     }
 
     .fixed-header h2 {
-        font-size: 16px;
+        font-size: 22px;
     }
 
     .company-logo {
-        width: 40px;
-        height: 40px;
+        width: 60px;
+        height: 60px;
     }
 
     h3 {
-        font-size: 18px;
+        font-size: 26px;
+    }
+
+    h4 {
+        font-size: 22px;
     }
 
     label {
-        font-size: 14px;
+        font-size: 16px;
     }
 
     input, textarea {
@@ -269,20 +274,24 @@ input[type="checkbox"]:hover, input[type="radio"]:hover {
 
 @media (max-width: 480px) {
     .fixed-header h1 {
-        font-size: 16px;
+        font-size: 22px;
     }
 
     .fixed-header h2 {
-        font-size: 14px;
+        font-size: 20px;
     }
 
     .company-logo {
-        width: 35px;
-        height: 35px;
+        width: 50px;
+        height: 50px;
     }
 
     h3 {
-        font-size: 16px;
+        font-size: 22px;
+    }
+
+    h4 {
+        font-size: 20px;
     }
 
     button {
