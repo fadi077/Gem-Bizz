@@ -1,10 +1,10 @@
- /* General Styles */
+/* General Styles */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap'); /* Importing Roboto font */
 
 body {
     font-family: 'Roboto', sans-serif;
     background-color: #1e1e1e;
-    color: #ffffff;
+    color: white; /* Soft beige for the general text */
     margin: 0;
     padding: 0;
 }
@@ -31,18 +31,16 @@ img {
 
 .fixed-header h1, .fixed-header h2 {
     margin: 0;
-    font-weight: 700; /* Bold headings for clear visibility */
+    font-weight: 700;
+    color: white; /* Orange for headings */
 }
 
 .fixed-header h1 {
     font-size: 36px; /* Larger font size for main header */
-    color: #ffffff;
-    margin-left: 10px;
 }
 
 .fixed-header h2 {
     font-size: 28px; /* Slightly smaller font for subheading */
-    color: #ffffff;
 }
 
 .logo-section {
@@ -73,14 +71,14 @@ img {
 h3 {
     font-size: 32px; /* Larger section headers */
     font-weight: 700; /* Bold font for section headers */
-    color: #ff6600; /* Highlight section headers with a color */
     margin-bottom: 15px;
+    color: white; /* Orange for section headers */
 }
 
 h4 {
     font-size: 26px; /* Slightly smaller sub-headers */
-    font-weight: 500; /* Medium weight for sub-headers */
-    color: #ffffff; /* Ensure contrast for readability */
+    font-weight: 500;
+    color: white; /* Orange for sub-headers */
     margin-bottom: 10px;
 }
 
@@ -96,7 +94,7 @@ label {
     display: block;
     margin-top: 15px;
     font-size: 18px;
-    color: #bbbbbb;
+    color: whitesmoke; /* Soft beige for form labels */
 }
 
 input[type="text"], input[type="email"], input[type="file"], textarea {
@@ -104,14 +102,14 @@ input[type="text"], input[type="email"], input[type="file"], textarea {
     padding: 12px;
     margin-top: 8px;
     border-radius: 6px;
-    border: 1px solid #ffffff;
+    border: 1px solid whitesmoke; /* Soft brown border for inputs */
     background-color: #3b3b3b;
-    color: #ffffff;
+    color: #b8b8b8; /* Soft beige text for inputs */
     transition: background-color 0.3s ease, border 0.3s ease;
 }
 
 input[type="text"]:hover, input[type="email"]:hover, input[type="file"]:hover, textarea:hover {
-    border: 1px solid #ff5500;
+    border: 1px solid whitesmoke; /* Lighter brown on hover */
     background-color: #4a4a4a;
 }
 
@@ -123,8 +121,8 @@ textarea {
 button {
     margin-top: 20px;
     padding: 12px 20px;
-    background-color: gray;
-    color: white;
+    background-color: #6a5f4f; /* Muted dark brown for button */
+    color: whitesmoke; /* Soft beige for button text */
     border: none;
     border-radius: 6px;
     cursor: pointer;
@@ -132,14 +130,14 @@ button {
 }
 
 button:hover {
-    background-color: #e14d00;
+    background-color: #8b7d65; /* Lighter muted brown on hover */
     transform: scale(1.05);
 }
 
 /* Progress Bar */
 .progress-container {
     width: 100%;
-    background-color: #ddd;
+    background-color: whitesmoke;
     border-radius: 10px;
     margin-top: 20px;
 }
@@ -147,7 +145,7 @@ button:hover {
 .progress-bar {
     height: 10px;
     width: 0;
-    background-color: #ff5500;
+    background-color: whitesmoke;
     border-radius: 10px;
     transition: width 0.4s ease;
 }
@@ -162,7 +160,7 @@ fieldset {
 legend {
     font-size: 24px; /* Larger font for legend */
     font-weight: 700;
-    color: #ff6600; /* Use color to distinguish section titles */
+    color: white; /* Orange for fieldset legends */
     margin-bottom: 10px;
 }
 
@@ -171,8 +169,8 @@ legend {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    background-color: gray;
-    color: white;
+    background-color: #6a5f4f;
+    color: whitesmoke;
     padding: 12px 20px;
     border-radius: 50px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
@@ -181,7 +179,7 @@ legend {
 }
 
 .cta-button:hover {
-    background-color: #ff4500;
+    background-color: #8b7d65;
     transform: scale(1.05);
 }
 
